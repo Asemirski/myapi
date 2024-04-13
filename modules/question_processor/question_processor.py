@@ -3,7 +3,6 @@ from openai import OpenAI
 from azure.identity import DefaultAzureCredential
 from azure.keyvault.secrets import SecretClient
 
-
 class Question(BaseModel):
     question: str
 
