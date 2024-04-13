@@ -17,6 +17,7 @@ This is an example of basic api service using FastAPI and OpenAI. It simply retu
 To run service locally execute the following commands:
 ```
 az login
+pip3 install -r requirements.txt
 python3 main.py 'KEY_VAULT_URL'
 ```
 Add the command above to the Web App startup command box to run service in a Web App.
