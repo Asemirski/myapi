@@ -3,14 +3,15 @@ from openai import OpenAI
 from azure.identity import DefaultAzureCredential
 from azure.keyvault.secrets import SecretClient
 
+
 class Question(BaseModel):
     question: str
 
 class QuestionProcessor:
-    def __init__(self):
+    def __init__(self, key_vault_url):
         credential = DefaultAzureCredential()
-        # Change next time to be configurable
-        key_vault_url = 'https://myapi-keyvault.vault.azure.net/'
+
+        # Initialize key vault client
         client = SecretClient(vault_url=key_vault_url, credential=credential)
 
         self.openai_api_key = client.get_secret('openai-api-key').value
