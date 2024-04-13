@@ -8,7 +8,7 @@ This is an example of basic api service using FastAPI and OpenAI.
 3. Optional: vnet and private/service endpoints for security
 
 ### Required secrets
-1. OpenAI API key stored in Key Vault
+1. OpenAI API key stored in Key Vault called 'openai-api-key'
 
 ## Usage
 To run service locally execute the following command:
