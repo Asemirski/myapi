@@ -26,6 +26,7 @@ az login
 terraform apply -var="{IP_ADDRESS_OF_YOUR_MACHINE}" -var="openai_api_key={OPENAI_API_KEY}" -auto-approve
 ```
 Terraform will deploy all the required infra and you'll need only to deploy the app.
+
 To destroy the infra run the following command:
 ```
 terraform destroy -var="{IP_ADDRESS_OF_YOUR_MACHINE}" -var="openai_api_key={OPENAI_API_KEY}" -auto-approve
