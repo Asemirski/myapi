@@ -100,7 +100,7 @@ resource "azurerm_key_vault_access_policy" "system_identity_policy" {
   tenant_id    = azurerm_linux_web_app.myapi_web_app.identity[0].tenant_id
   object_id    = azurerm_linux_web_app.myapi_web_app.identity[0].principal_id
 
-  secret_permissions = ["List", "Get", "Set", ]
+  secret_permissions = ["List", "Get",]
 }
 
 # Secret
