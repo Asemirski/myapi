@@ -24,6 +24,7 @@ To deploy required infrastructure, go to `iac` folder and execute the following 
 ```
 az login
 cd iac
+terraform init
 terraform apply -var="{IP_ADDRESS_OF_YOUR_MACHINE}" -var="openai_api_key={OPENAI_API_KEY}" -auto-approve
 ```
 Terraform will deploy all the required infra and you'll need only to deploy the app.
