@@ -93,6 +93,8 @@ resource "azurerm_linux_web_app" "myapi_web_app" {
       python_version = 3.11
     }
   }
+
+  virtual_network_subnet_id = azurerm_subnet.myapi_subnet.id
 }
 
 resource "azurerm_key_vault_access_policy" "system_identity_policy" {
