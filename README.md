@@ -19,7 +19,7 @@ Short-term memory was implemented to cover course's task needs that is to store 
 2. Linux Web App with python3 runtime and configured access to the Key Vault
 3. (Optional) Vnet and service/private endpoints for security.
 
-## Infrastucture deployment
+## Infrastructure deployment
 To deploy required infrastructure, go to `iac` folder and execute the following commands:
 ```
 az login
