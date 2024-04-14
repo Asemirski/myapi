@@ -161,3 +161,6 @@ cython_debug/
 
 .vscode
 .deployment
+*/.terraform
+*/.terraform.lock.hcl
+*/.terraform.tfstate
